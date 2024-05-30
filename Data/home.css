@@ -1,0 +1,471 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .logo img {
+    width: 20px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .nav-links li {
+    margin: 0;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #ddd;
+}
+
+.hero-section {
+    background: url('welcome section (2).jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn-primary {
+    background: #ff5722;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.hero-section .btn-primary:hover {
+    background: #e64a19;
+}
+
+/* Popular Courses Section Styles */
+.popular-courses-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+}
+
+.popular-courses-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 22%;
+    max-width: 22%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.feature-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.course {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
+}
+
+.course img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.course .btn-secondary {
+    background: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.course .btn-secondary:hover {
+    background: #388E3C;
+}
+
+.team-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.team-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4CAF50;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Ensure consistency across all sections */
+.features-section,
+.popular-courses-section,
+.testimonials-section,
+.about-section,
+.news-section,
+.newsletter-section {
+    padding: 2rem 1rem;
+}
+
+.features-section .features,
+.popular-courses-section .courses,
+.testimonials-section .testimonials,
+.news-section .news-events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.features-section .feature,
+.popular-courses-section .course,
+.testimonials-section .testimonial,
+.news-section .news-event {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features-section .feature:hover,
+.popular-courses-section .course:hover,
+.testimonials-section .testimonial:hover,
+.news-section .news-event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.features-section .feature img,
+.popular-courses-section .course img,
+.news-section .news-event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.features-section .feature h3,
+.popular-courses-section .course h3,
+.testimonials-section .testimonial h4,
+.news-section .news-event h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4CAF50;
+}
+
+.features-section .feature p,
+.popular-courses-section .course p,
+.testimonials-section .testimonial p,
+.news-section .news-event p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.news-section {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.news-events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.news-event {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.news-event img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.news-event h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-event p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.news-event .btn-secondary {
+    background: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.news-event .btn-secondary:hover {
+    background: #388E3C;
+}
+
+/* Newsletter Section Styles */
+.newsletter-section {
+    padding: 2rem 1rem;
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter-section input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsletter-section .btn-primary {
+    background: #ff5722;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.newsletter-section .btn-primary:hover {
+    background: #e64a19;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 0.5rem;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .social-links a:hover {
+    transform: scale(1.1);
+}
