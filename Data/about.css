@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+}
+
+.about-section,
+.mission-section,
+.team-section {
+    background: #fff;
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+}

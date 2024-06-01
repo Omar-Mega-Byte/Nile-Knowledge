@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nile Knowledge Learning System</title>
+    <link rel="stylesheet" href="../Data/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Nile Knowledge Learning System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="contact_process.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="location-section">
+            <h2>Our Location</h2>
+            <p>123 Knowledge Lane, Learning City, Education State, 45678</p>
+            <div id="map"></div>
+        </section>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How can I sign up for a course?</h3>
+                <p>You can sign up for a course by visiting our courses page and selecting the course you are interested in. Follow the prompts to complete the registration process.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept various payment methods including credit/debit cards, PayPal, and bank transfers.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I get a refund if I am not satisfied with a course?</h3>
+                <p>Yes, we offer a 30-day money-back guarantee. If you are not satisfied with a course, please contact our support team within 30 days of purchase for a full refund.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nile Knowledge Learning System. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
