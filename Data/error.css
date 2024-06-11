@@ -1,0 +1,44 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gif-container {
+    margin-top: 20px;
+}
+
+.error-gif {
+    width: 100%;
+    max-width: 300px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.error-gif {
+    max-width: 200px;
+    margin-left: 105px;
+}
