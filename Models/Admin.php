@@ -33,16 +33,21 @@ class Admin extends User{
 
     }
 
-    public function listUsers() {
+    public function listUsers($list) {
         $newController = new DBController();
         $newController->openConnection();
-        $sql = "SELECT * FROM `users`";
+        $sql = "SELECT " . $list . " FROM `users`";
         $result = $newController->select($sql);
         return $result;
     }
 
-    public function searchUser() {
-
+    public function searchUser($search) {
+        $newController = new DBController();
+        $newController->openConnection();
+        
+        $sql = "SELECT * FROM `users` WHERE `username` LIKE '%" . $search . "%' OR `email` LIKE '%" . $search . "%'";
+        $result = $newController->select($sql);
+        return $result;
     }
 }
 
