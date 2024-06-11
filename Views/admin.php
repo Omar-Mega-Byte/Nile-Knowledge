@@ -4,112 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Data/admin.css">
     <title>Admin Panel</title>
 </head>
-<style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #e0f7fa;
-            margin: 0;
-            padding: 0;
-        }
-
-        section {
-            background: #ffffff;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        section:hover {
-            transform: scale(1.02);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-        }
-
-        h1, h2 {
-            color: #00796b;
-            text-align: center;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-            transition: background-color 0.3s ease;
-        }
-
-        th {
-            background-color: #004d40;
-            color: #ffffff;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover td {
-            background-color: #b2dfdb;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin: 10px 0 5px;
-            color: #00796b;
-        }
-
-        input {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        input:focus {
-            border-color: #00796b;
-            box-shadow: 0 0 8px rgba(0, 121, 107, 0.3);
-            outline: none;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #00796b;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #004d40;
-            transform: scale(1.05);
-        }
-
-        .container {
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-
 <body>
     <section>
         <h1>Admin Panel</h1>
@@ -117,7 +14,7 @@
         <?php
         require '../Models/Admin.php';
         $admin = new Admin();
-        $result = $admin->listUsers();
+        $result = $admin->listUsers('*');
         if (is_array($result) && count($result) > 0) {
             echo "<table>";
             echo "<tr><th>Username</th><th>Email</th><th>Password</th><th>Role</th><th>ID</th>";
@@ -133,6 +30,14 @@
             echo "</table>";
         }
         ?>
+    </section>
+    <section>
+    <h2>Search User:</h2>
+        <form action="../Controllers/adminSearch.php" method="post" autocomplete="off">
+            <label for="searchUser">Search: </label>
+            <input type="text" id="searchUser" name="search" required>
+            <button type="submit">Search User</button>
+        </form>
     </section>
     <section>
         <h2>Add User:</h2>
